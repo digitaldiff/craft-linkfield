@@ -1,5 +1,12 @@
 # Release Notes for Typed Link Field
 
+## 5.0.1 - 2024-05-07
+- Update: Changed author and contact settings
+
+## 5.0.0 - 2024-05-07
+> {warning} You are now on the diff. Kommunikation AG fork of this repository
+- New: Craft CMS 5 support
+
 ## 2.1.5 - 2022-11-29
 - Fix: Escape SQL query in Migration (see: https://github.com/sebastian-lenz/craft-linkfield/pull/245)
 
