@@ -1,3 +1,78 @@
+# Setup 
+
+## Installation on Craft CMS 5
+
+1. Add to composer.json
+   ```
+    "repositories": [
+      {
+        "type": "vcs",
+        "url": "https://github.com/digitaldiff/craft-utils.git"
+      },
+      {
+        "type": "vcs",
+        "url": "https://github.com/digitaldiff/craft-linkfield.git"
+      },
+    ]
+   ```
+2. Run command `composer require sebastianlenz/linkfield`
+
+## Create a new plugin version
+1. Commit & push changes
+2. Create a new release
+
+## Update installed plugin version
+Run `composer require sebastianlenz/linkfield:5.0.2` => change the version number as needed.  
+  
+OR  
+
+1. Make sure composer is not set to a fixed plugin version (something like this):
+    ```
+      "require": {
+        ...
+        "sebastianlenz/linkfield": "^5.0.0",
+        ...
+      },
+    ```
+2. Run `composer update sebastianlenz/linkfield` 
+
+## Migrate from Craft 4 to Craft 5
+
+1. Follow the official Craft Upgrade guide to step 7 (https://craftcms.com/docs/5.x/upgrade.html#performing-the-upgrade)
+2. Add to composer.json
+   ```
+    "repositories": [
+      {
+        "type": "vcs",
+        "url": "https://github.com/digitaldiff/craft-utils.git"
+      },
+      {
+        "type": "vcs",
+        "url": "https://github.com/digitaldiff/craft-linkfield.git"
+      },
+    ]
+   ```
+   
+3. Change 
+    ```  
+      "require": {
+          ...
+          "sebastianlenz/linkfield": "2.1.5",
+          ...
+        },
+     ```
+   to
+    ```  
+      "require": {
+          ...
+          "sebastianlenz/linkfield": "^5.0.0",
+          ...
+        },
+     ```
+ 4. Continue according to the upgrade guide.
+
+---
+
 # Link field plugin for Craft
 
 This plugin adds a new link field type to the Craft CMS. The link field allows content editors to choose from

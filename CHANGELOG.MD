@@ -1,5 +1,8 @@
 # Release Notes for Typed Link Field
 
+## Unreleased - 2024-05-08
+- New: Added setup and upgrade instructions
+
 ## 5.0.1 - 2024-05-07
 - Update: Changed author and contact settings
 
